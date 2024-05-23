@@ -16,7 +16,7 @@ let john = {
 // Create a calcBMI method on each object to calculate the BMI (the same method on both objects). Assign the BMI value to a property called bmi (lowercase),
 // and also return it from the method.
 function calcBMI(name) {
-  let bmi = name.mass / (name.height * name.height);
+  let bmi = (name.mass / (name.height * name.height)).toFixed(1);
   return bmi;
 }
 // Log to the console who has the higher BMI, together with the full name and the respective BMI.
